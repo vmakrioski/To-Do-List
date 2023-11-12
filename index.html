@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="shortcut icon" href="toDoListIcon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TO DO LIST</h1>
+      <div id="newItem">
+        <div class="newItem">
+          <input type="text" placeholder="To Do Task" id="newItemInput" />
+          <button onclick="addToList()">Add</button>
+        </div>
+        <div class="newItem">
+          <input
+            type="text"
+            oninput="searchList(event)"
+            id="search"
+            placeholder="Search Task"
+          />
+        </div>
+        <div id="items"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
